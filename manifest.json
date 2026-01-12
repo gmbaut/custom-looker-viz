@@ -1,0 +1,24 @@
+{
+  "$schema": "https://developers.google.com/looker-studio/visualizations/manifest-reference",
+  "name": "Motorama Creative Cards",
+  "organization": "Motorama Australia",
+  "description": "Display creative assets as visual cards with metrics and dimensions",
+  "logoUrl": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=100&h=100&fit=crop",
+  "organizationUrl": "https://motorama.com.au",
+  "supportUrl": "https://motorama.com.au/support",
+  "privacyPolicyUrl": "https://motorama.com.au/privacy",
+  "devMode": false,
+  "components": [
+    {
+      "id": "creative-cards",
+      "name": "Creative Cards Visualization",
+      "description": "Display creative assets in a card grid layout",
+      "iconUrl": "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=50&h=50&fit=crop",
+      "resource": {
+        "js": "creative-cards.js",
+        "css": "creative-cards.css",
+        "config": "creative-cards-config.json"
+      }
+    }
+  ]
+}
