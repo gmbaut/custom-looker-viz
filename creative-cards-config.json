@@ -1,0 +1,234 @@
+{
+  "data": [
+    {
+      "id": "concepts",
+      "label": "Data Fields",
+      "elements": [
+        {
+          "id": "imageUrl",
+          "label": "Image URL",
+          "type": "DIMENSION",
+          "options": {
+            "min": 1,
+            "max": 1
+          }
+        },
+        {
+          "id": "creativeName",
+          "label": "Creative Name",
+          "type": "DIMENSION",
+          "options": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        {
+          "id": "creativeType",
+          "label": "Creative Type",
+          "type": "DIMENSION",
+          "options": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        {
+          "id": "campaignGroup",
+          "label": "Campaign Group",
+          "type": "DIMENSION",
+          "options": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        {
+          "id": "channel",
+          "label": "Channel",
+          "type": "DIMENSION",
+          "options": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        {
+          "id": "status",
+          "label": "Status",
+          "type": "DIMENSION",
+          "options": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        {
+          "id": "impressions",
+          "label": "Impressions",
+          "type": "METRIC",
+          "options": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        {
+          "id": "clicks",
+          "label": "Clicks",
+          "type": "METRIC",
+          "options": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        {
+          "id": "spend",
+          "label": "Spend",
+          "type": "METRIC",
+          "options": {
+            "min": 0,
+            "max": 1
+          }
+        },
+        {
+          "id": "ctr",
+          "label": "CTR",
+          "type": "METRIC",
+          "options": {
+            "min": 0,
+            "max": 1
+          }
+        }
+      ]
+    }
+  ],
+  "style": [
+    {
+      "id": "layout",
+      "label": "Layout Settings",
+      "elements": [
+        {
+          "id": "columns",
+          "label": "Number of Columns",
+          "type": "SELECT_SINGLE",
+          "defaultValue": "4",
+          "options": [
+            {"label": "2 Columns", "value": "2"},
+            {"label": "3 Columns", "value": "3"},
+            {"label": "4 Columns", "value": "4"},
+            {"label": "5 Columns", "value": "5"},
+            {"label": "6 Columns", "value": "6"}
+          ]
+        },
+        {
+          "id": "cardSpacing",
+          "label": "Card Spacing (px)",
+          "type": "SELECT_SINGLE",
+          "defaultValue": "16",
+          "options": [
+            {"label": "8px", "value": "8"},
+            {"label": "12px", "value": "12"},
+            {"label": "16px", "value": "16"},
+            {"label": "24px", "value": "24"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cardStyle",
+      "label": "Card Style",
+      "elements": [
+        {
+          "id": "showShadow",
+          "label": "Show Card Shadow",
+          "type": "CHECKBOX",
+          "defaultValue": true
+        },
+        {
+          "id": "borderRadius",
+          "label": "Border Radius (px)",
+          "type": "SELECT_SINGLE",
+          "defaultValue": "12",
+          "options": [
+            {"label": "0px (Square)", "value": "0"},
+            {"label": "8px", "value": "8"},
+            {"label": "12px", "value": "12"},
+            {"label": "16px", "value": "16"}
+          ]
+        },
+        {
+          "id": "imageHeight",
+          "label": "Image Height",
+          "type": "SELECT_SINGLE",
+          "defaultValue": "200",
+          "options": [
+            {"label": "Small (150px)", "value": "150"},
+            {"label": "Medium (200px)", "value": "200"},
+            {"label": "Large (250px)", "value": "250"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "colors",
+      "label": "Colors",
+      "elements": [
+        {
+          "id": "primaryColor",
+          "label": "Primary Color",
+          "type": "FILL_COLOR",
+          "defaultValue": {"color": "#E31837"}
+        },
+        {
+          "id": "backgroundColor",
+          "label": "Card Background",
+          "type": "FILL_COLOR",
+          "defaultValue": {"color": "#FFFFFF"}
+        },
+        {
+          "id": "textColor",
+          "label": "Text Color",
+          "type": "FILL_COLOR",
+          "defaultValue": {"color": "#1A1A1A"}
+        },
+        {
+          "id": "metricBackground",
+          "label": "Metric Background",
+          "type": "FILL_COLOR",
+          "defaultValue": {"color": "#F8FAFC"}
+        }
+      ]
+    },
+    {
+      "id": "display",
+      "label": "Display Options",
+      "elements": [
+        {
+          "id": "showMetrics",
+          "label": "Show Metrics",
+          "type": "CHECKBOX",
+          "defaultValue": true
+        },
+        {
+          "id": "showDimensions",
+          "label": "Show Dimensions",
+          "type": "CHECKBOX",
+          "defaultValue": true
+        },
+        {
+          "id": "metricsLayout",
+          "label": "Metrics Layout",
+          "type": "SELECT_SINGLE",
+          "defaultValue": "grid",
+          "options": [
+            {"label": "2x2 Grid", "value": "grid"},
+            {"label": "Single Row", "value": "row"},
+            {"label": "Single Column", "value": "column"}
+          ]
+        }
+      ]
+    }
+  ],
+  "interactions": [
+    {
+      "id": "onClick",
+      "label": "Click Interaction",
+      "supportedActions": ["FILTER"]
+    }
+  ]
+}
