@@ -1,5 +1,4 @@
 {
-  "$schema": "https://developers.google.com/looker-studio/visualizations/manifest-reference",
   "name": "Motorama Creative Cards",
   "organization": "Motorama Australia",
   "description": "Display creative assets as visual cards with metrics and dimensions",
@@ -7,6 +6,7 @@
   "organizationUrl": "https://motorama.com.au",
   "supportUrl": "https://motorama.com.au/support",
   "privacyPolicyUrl": "https://motorama.com.au/privacy",
+  "packageUrl": "https://github.com/gmbaut/custom-looker-viz",
   "devMode": false,
   "components": [
     {
@@ -22,3 +22,4 @@
     }
   ]
 }
+
